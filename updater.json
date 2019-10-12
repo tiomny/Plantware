@@ -1,4 +1,22 @@
 {
-  "version": "1.0.0",
-  "updateUrl": "https://raw.githubusercontent.com/tiomny/Plantware/master/updater.json"
+  "version": "0.0.0",
+  "updateUrl": "https://raw.githubusercontent.com/tiomny/Plantware/master/updater.json",
+  "fileList": [
+    {
+      "name": "alarm.svg",
+      "timestamp": "0"
+    },
+    {
+      "name": "simpleflower.svg",
+      "timestamp": "0"
+    },
+    {
+      "name": "json.json",
+      "timestamp": "0"
+    },
+    {
+      "name": "variables.json",
+      "timestamp": "0"
+    }
+  ]
 }
