@@ -1,6 +1,6 @@
 {
   "version": "0.0.1",
-  "updateUrl": "https://raw.githubusercontent.com/tiomny/Plantware/master/updater.json",
+  "updateUrl": "https://raw.githubusercontent.com/tiomny/Plantware/master/",
   "fileList": [
     {
       "name": "alarm.svg",
