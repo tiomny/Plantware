@@ -1,22 +1,52 @@
 {
   "version": "0.0.1",
-  "updateUrl": "https://raw.githubusercontent.com/tiomny/Plantware/master/",
-  "fileList": [
+  "updateurl": "https://raw.githubusercontent.com/tiomny/Plantware/master/",
+  "filelist": [
     {
-      "name": "alarm.svg",
-      "timestamp": "0"
+      "path": "update",
+      "files": [
+        {
+          "name": "updater.json",
+          "timestamp": "0"
+        },
+        {
+          "name": "alarm.svg",
+          "timestamp": "1"
+        },
+        {
+          "name": "simpleflower.svg",
+          "timestamp": "0"
+        },
+        {
+          "name": "variables.json",
+          "timestamp": "0"
+        },
+        {
+          "name": "main.ts",
+          "timestamp": "0"
+        },
+        {
+          "name": "index.htm",
+          "timestamp": "0"
+        },
+        {
+          "name": "runtime.ts",
+          "timestamp": "0"
+        },
+        {
+          "name": "styles.css",
+          "timestamp": "0"
+        }
+      ]
     },
     {
-      "name": "simpleflower.svg",
-      "timestamp": "0"
-    },
-    {
-      "name": "json.json",
-      "timestamp": "0"
-    },
-    {
-      "name": "variables.json",
-      "timestamp": "0"
+      "path": "upgrade",
+      "files": [
+        {
+          "name": "firmware.bin",
+          "timestamp": "0"
+        }
+      ]
     }
   ]
 }
