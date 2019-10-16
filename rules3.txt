@@ -1,0 +1,16 @@
+On System#Boot do
+ event,MotorOff
+ config,task,Config,dummyload
+ config,task,Config1,dummyload
+ config,task,DT,dummyload
+endon
+
+On Clock#Time=All,00:00 do
+ if %unixday%>0
+  taskvalueset,5,1,0
+ endif
+endon
+
+on StartNarod do
+ timerset,2,360
+endon

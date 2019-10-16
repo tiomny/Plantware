@@ -1,0 +1,79 @@
+on SetMoistureLow do
+ taskvalueset,3,1,%eventvalue%
+endon
+
+on SetWateringPeriod do
+ taskvalueset,3,2,%eventvalue%
+endon
+
+on SetMaxWateringCount do
+ taskvalueset,3,3,%eventvalue%
+endon
+
+on SetMinWateringDelay do
+  taskvalueset,3,4,%eventvalue%
+endon
+
+on ResetWateringCount do
+ taskvalueset,5,1,0
+endon
+
+on SetWateringCount do
+ taskvalueset,5,1,%eventvalue%
+endon
+
+on SetWateringTime do
+ taskvalueset,7,1,%unixday%
+ taskvalueset,7,2,%unixday_sec%
+endon
+
+on MotorOn do
+ taskvalueset,4,1,1
+ gpio,15,1
+endon
+
+on MotorOff do
+ taskvalueset,4,1,0
+ gpio,15,0
+endon
+
+on SetPreviousMoisture do
+ taskvalueset,5,2,%eventvalue%
+endon
+
+on SetMoistAlmHyst do
+ taskvalueset,6,1,%eventvalue%
+endon
+
+on SetWateringAlarm do
+ taskvalueset,8,1,1
+endon
+
+on ResetWateringAlarm do
+ taskvalueset,8,1,0
+endon
+
+on ResetCalibrateAlarm do
+ taskvalueset,8,2,0
+endon
+
+on ResetSensorAlarm do
+ taskvalueset,8,3,0
+endon
+
+on SaveConfig do
+ config,task,Config,dummysave
+ config,task,Config1,dummysave
+endon
+
+on TimePassed do
+ if [DT#YMD]=0 and %unixday%>0
+  taskvalueset,7,1,%unixday%-1
+ endif
+ if %unixday%>0
+  let,5,%unixday%-[DT#YMD]
+  let,4,%v5%*86400-[DT#HMS]+%unixday_sec%
+ else
+  let,4,0
+ endif
+endon

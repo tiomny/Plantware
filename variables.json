@@ -1,0 +1,107 @@
+[{
+        "name": "current",
+        "descr": "Current values",
+        "commands": [
+          {
+            "command": "ResetAlarms",
+            "descr": "Reset alarms"
+          }
+        ],
+        "valtype": "monitor",
+        "vars": [
+            {
+                "name": "Motor#On",
+                "descr": "Pump running",
+                "valtype": "indicator"
+            },
+            {
+                "name": "Current#WateringCount",
+                "descr": "Today's watering count"
+            },
+            {
+                "name": "Current#PreviousMoisture",
+                "descr": "Moisture value before last watering"
+            },
+            {
+                "name": "Enabled#RunValue",
+                "descr": "Watering enabled",
+                "valtype": "indicator"
+            },
+            {
+                "name": "Moisture#Value",
+                "descr": "Soil moisture level",
+                "help": "Full-colored area indicates level of soil moisture."
+            },
+            {
+                "name": "Alarm#WateringAlarm",
+                "descr": "Watering failure",
+                "help": "Watering was failed (check tube or water level in tank)",
+                "valtype": "alarm"
+            },
+            {
+                "name": "Alarm#CalibrateAlarm",
+                "descr": "Sensor calibration failure",
+                "help": "Moisture sensor needs to be recalibrated",
+                "valtype": "alarm"
+            },
+            {
+                "name": "Alarm#SensorAlarm",
+                "descr": "Sensor failure",
+                "help": "Sensor is disconnected or faulty",
+                "valtype": "alarm"
+            },
+            {
+                "descr": "Last watering time",
+                "name": "DT#YMD",
+                "valtype": "date"
+            },
+            {
+                "descr": " ",
+                "name": "DT#HMS",
+                "valtype": "time"
+            }
+        ]
+    },
+    {
+        "name": "config",
+        "descr": "Configuration",
+        "commands": [
+          {
+            "command": "SaveConfig",
+            "descr": "Save configuration"
+          }
+        ],
+        "valtype": "input",
+        "vars": [{
+                "name": "Config#MoistureLow",
+                "descr": "Moisture low level"
+            },
+            {
+                "name": "Config#WateringPeriod",
+                "descr": "Watering time (sec)"
+            },
+            {
+                "name": "Config#MaxWateringCount",
+                "descr": "Max watering times per day",
+                "help": "Number of drops is associated with maximum allowed number of pump starts per day. Number of full-coloured drops indicates how many times pump has already been started."
+            },
+            {
+                "name": "Config#MinWateringDelay",
+                "descr": "Minimal time between waterings"
+            },
+            {
+                "name": "Config1#MoistAlmHyst",
+                "descr": "Minimal difference between moisture before and after watering to raise the alarm"
+            },
+            {
+                "name": "Config1#AutoRstAlms",
+                "descr": "Reset alarms at day start",
+                "valtype": "checkbox"                
+            },
+            {
+                "name": "Config1#Lang",
+                "descr": "Language"
+            }
+        ]
+    }
+]

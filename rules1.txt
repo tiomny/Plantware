@@ -1,0 +1,38 @@
+on Moisture#Value>100 do
+ if [Moisture#Value]>200
+  taskvalueset,8,3,1
+ else
+  taskvalueset,8,2,1
+endon
+
+on Moisture#Value<[Config#MoistureLow] do
+ taskvalueset,8,3,0
+ event,TimePassed
+ if [Enabled#RunValue]>0 and [Current#WateringCount]<[Config#MaxWateringCount] and %v4%>[Config#MinWateringDelay] and [Alarm#WateringAlarm]=0
+  event,Irrigate
+ endif
+endon
+
+on Irrigate do
+ let,2,[Current#PreviousMoisture]+[Config1#MoistAlmHyst]
+ let,3,4*[Config#MinWateringDelay]
+ if [Moisture#Value]<%v2% and %v3%>%v4%
+  taskvalueset,8,1,1
+ endif
+ if [Motor#On]=0 and [Alarm#WateringAlarm]=0
+  taskvalueset,5,2,[Moisture#Value]
+  taskvalueset,4,1,1
+  gpio,15,1
+  taskvalueset,5,1,[Current#WateringCount]+1
+  taskvalueset,7,1,%unixday%
+  taskvalueset,7,2,%unixday_sec%
+  config,task,DT,dummysave
+  timerset,1,[Config#WateringPeriod]
+ endif
+endon
+
+on rules#timer=1 do
+ taskvalueset,4,1,0
+ gpio,15,0
+ timerset,1,0
+endon
