@@ -1,11 +1,11 @@
 {
-    "version": "0.0.1",
+    "version": "0.0.2",
     "updateurl": "https://raw.githubusercontent.com/tiomny/Plantware/master/",
     "filelist": [{
             "path": "upload",
             "files": [{
                     "name": "updater.json",
-                    "timestamp": "2019-10-19 22:19:00"
+                    "timestamp": "2019-10-19 22:52:00"
                 },
                 {
                     "name": "alarm.svg",
