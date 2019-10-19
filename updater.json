@@ -1,52 +1,48 @@
 {
-  "version": "0.0.0",
-  "updateurl": "https://raw.githubusercontent.com/tiomny/Plantware/master/",
-  "filelist": [
-    {
-      "path": "update",
-      "files": [
-        {
-          "name": "updater.json",
-          "timestamp": "0"
+    "version": "0.0.1",
+    "updateurl": "https://raw.githubusercontent.com/tiomny/Plantware/master/",
+    "filelist": [{
+            "path": "update",
+            "files": [{
+                    "name": "updater.json",
+                    "timestamp": "2019-10-19 14:45:00"
+                },
+                {
+                    "name": "alarm.svg",
+                    "timestamp": "0"
+                },
+                {
+                    "name": "simpleflower.svg",
+                    "timestamp": "0"
+                },
+                {
+                    "name": "variables.json",
+                    "timestamp": "0"
+                },
+                {
+                    "name": "main.ts",
+                    "timestamp": "2019-10-19 14:45:00"
+                },
+                {
+                    "name": "main.htm",
+                    "timestamp": "2019-10-19 14:45:00"
+                },
+                {
+                    "name": "runtime.ts",
+                    "timestamp": "2019-10-19 14:45:00"
+                },
+                {
+                    "name": "styles.css",
+                    "timestamp": "0"
+                }
+            ]
         },
         {
-          "name": "alarm.svg",
-          "timestamp": "0"
-        },
-        {
-          "name": "simpleflower.svg",
-          "timestamp": "0"
-        },
-        {
-          "name": "variables.json",
-          "timestamp": "0"
-        },
-        {
-          "name": "main.ts",
-          "timestamp": "0"
-        },
-        {
-          "name": "index.htm",
-          "timestamp": "0"
-        },
-        {
-          "name": "runtime.ts",
-          "timestamp": "0"
-        },
-        {
-          "name": "styles.css",
-          "timestamp": "0"
+            "path": "upgrade",
+            "files": [{
+                "name": "firmware.bin",
+                "timestamp": "0"
+            }]
         }
-      ]
-    },
-    {
-      "path": "upgrade",
-      "files": [
-        {
-          "name": "firmware.bin",
-          "timestamp": "0"
-        }
-      ]
-    }
-  ]
+    ]
 }
