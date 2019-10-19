@@ -5,7 +5,7 @@
             "path": "upload",
             "files": [{
                     "name": "updater.json",
-                    "timestamp": "2019-10-19 14:45:00"
+                    "timestamp": "2019-10-19 22:19:00"
                 },
                 {
                     "name": "alarm.svg",
@@ -20,16 +20,16 @@
                     "timestamp": "0"
                 },
                 {
-                    "name": "main.ts",
-                    "timestamp": "2019-10-19 14:45:00"
+                    "name": "main.js",
+                    "timestamp": "0"
                 },
                 {
                     "name": "main.htm",
-                    "timestamp": "2019-10-19 14:45:00"
+                    "timestamp": "2019-10-19 22:19:00"
                 },
                 {
-                    "name": "runtime.ts",
-                    "timestamp": "2019-10-19 14:45:00"
+                    "name": "runtime.js",
+                    "timestamp": "0"
                 },
                 {
                     "name": "styles.css",
