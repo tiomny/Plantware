@@ -2,7 +2,7 @@
     "version": "0.0.1",
     "updateurl": "https://raw.githubusercontent.com/tiomny/Plantware/master/",
     "filelist": [{
-            "path": "update",
+            "path": "upload",
             "files": [{
                     "name": "updater.json",
                     "timestamp": "2019-10-19 14:45:00"
@@ -38,7 +38,7 @@
             ]
         },
         {
-            "path": "upgrade",
+            "path": "update",
             "files": [{
                 "name": "firmware.bin",
                 "timestamp": "0"
