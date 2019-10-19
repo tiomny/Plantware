@@ -1,11 +1,11 @@
 {
-    "version": "0.0.2",
+    "version": "0.0.3",
     "updateurl": "https://raw.githubusercontent.com/tiomny/Plantware/master/",
     "filelist": [{
             "path": "upload",
             "files": [{
                     "name": "updater.json",
-                    "timestamp": "2019-10-19 22:52:00"
+                    "timestamp": "2019-10-19 23:59:00"
                 },
                 {
                     "name": "alarm.svg",
@@ -34,6 +34,26 @@
                 {
                     "name": "styles.css",
                     "timestamp": "0"
+                },
+                {
+                    "name": "rules1.txt",
+                    "timestamp": "2019-10-19 23:59:00"
+                },
+                {
+                    "name": "rules2.txt",
+                    "timestamp": "2019-10-19 23:59:00"
+                },
+                {
+                    "name": "rules3.txt",
+                    "timestamp": "2019-10-19 23:59:00"
+                },
+                {
+                    "name": "rules4.txt",
+                    "timestamp": "2019-10-19 23:59:00"
+                },
+                {
+                    "name": "config.dat",
+                    "timestamp": "2019-10-19 23:59:00"
                 }
             ]
         },

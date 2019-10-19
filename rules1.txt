@@ -1,8 +1,10 @@
 on Moisture#Value>100 do
- if [Moisture#Value]>200
+ if [Moisture#Value]>=200 and %unixday%>0
   taskvalueset,8,3,1
- else
+ endif
+ if [Moisture#Value]>100 and [Moisture#Value]<200 and %unixday%>0
   taskvalueset,8,2,1
+ endif
 endon
 
 on Moisture#Value<[Config#MoistureLow] do

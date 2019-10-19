@@ -9,8 +9,19 @@ On Clock#Time=All,00:00 do
  if %unixday%>0
   taskvalueset,5,1,0
  endif
+ if %unixday%>0 and [Config1#AutoRstAlms]>0
+  event,ResetAlarms
+ endif
 endon
 
-on StartNarod do
- timerset,2,360
+on TimePassed do
+ if [DT#YMD]=0 and %unixday%>0
+  taskvalueset,7,1,%unixday%-1
+ endif
+ if %unixday%>0
+  let,5,%unixday%-[DT#YMD]
+  let,4,%v5%*86400-[DT#HMS]+%unixday_sec%
+ else
+  let,4,0
+ endif
 endon
