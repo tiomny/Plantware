@@ -97,10 +97,6 @@
                 "name": "Config1#AutoRstAlms",
                 "descr": "Reset alarms at day start",
                 "valtype": "checkbox"                
-            },
-            {
-                "name": "Config1#Lang",
-                "descr": "Language"
             }
         ]
     }
