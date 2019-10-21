@@ -25,3 +25,17 @@ on TimePassed do
   let,4,0
  endif
 endon
+
+on ResetWateringCount do
+ taskvalueset,5,1,0
+endon
+
+on MotorOn do
+ taskvalueset,4,1,1
+ gpio,13,1
+endon
+
+on MotorOff do
+ taskvalueset,4,1,0
+ gpio,13,0
+endon

@@ -24,7 +24,7 @@ on Irrigate do
  if [Motor#On]=0 and [Alarm#WateringAlarm]=0
   taskvalueset,5,2,[Moisture#Value]
   taskvalueset,4,1,1
-  gpio,15,1
+  gpio,13,1
   taskvalueset,5,1,[Current#WateringCount]+1
   taskvalueset,7,1,%unixday%
   taskvalueset,7,2,%unixday_sec%
@@ -35,6 +35,6 @@ endon
 
 on rules#timer=1 do
  taskvalueset,4,1,0
- gpio,15,0
+ gpio,13,0
  timerset,1,0
 endon
