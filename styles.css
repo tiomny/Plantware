@@ -1,1 +1,1 @@
-table{width:100%}body{max-width:600px}.center-children{display:flex;justify-content:center}
+table{width:100%}body{max-width:95vw;width:600px;max-height:95vh;height:800px;margin:10px}.center-children{display:flex;justify-content:center}.wrapper{max-height:95vh;height:800px;display:flex;flex-direction:column}main{display:flex;flex-flow:column;padding-top:20px;flex-grow:1}
