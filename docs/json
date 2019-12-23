@@ -1,0 +1,393 @@
+{"System":{
+"Build":20104,
+"Git Build":"",
+"System Libraries":"ESP82xx Core 2_5_2, NONOS SDK 2.2.1(cfd48f3), LWIP: 2.1.2 PUYA support",
+"Plugins":47,
+"Plugin description":" [Normal]",
+"Local Time":"2019-10-10 21:49:34",
+"Unit Number":1,
+"Unit Name":"WaterPlant_Main",
+"Uptime":337,
+"Last Boot Cause":"Manual reboot",
+"Reset Reason":"Hardware Watchdog",
+"Load":31.90,
+"Load LC":3101,
+"CPU Eco Mode":"false",
+"Heap Max Free Block":18848,
+"Heap Fragmentation":4,
+"Free RAM":19608
+},
+"WiFi":{
+"Hostname":"WaterPlant-Main-1",
+"IP Config":"DHCP",
+"IP Address":"192.168.1.36",
+"IP Subnet":"255.255.255.0",
+"Gateway":"192.168.1.1",
+"STA MAC":"5C:CF:7F:92:EB:E3",
+"DNS 1":"192.168.1.1",
+"DNS 2":"(IP unset)",
+"SSID":"HobbitHole",
+"BSSID":"E4:18:6B:4D:E5:68",
+"Channel":8,
+"Connected msec":2603670,
+"Last Disconnect Reason":200,
+"Last Disconnect Reason str":"(200) Beacon timeout",
+"Number Reconnects":7,
+"Force WiFi B/G":"false",
+"Restart WiFi Lost Conn":"false",
+"Force WiFi No Sleep":"false",
+"Periodical send Gratuitous ARP":"false",
+"Connection Failure Threshold":0,
+"RSSI":-60
+},
+"nodes":[
+{"nr":1,
+"name":"WaterPlant_Main",
+"build":20104,
+"platform":"ESP Easy Mega",
+"ip":"192.168.1.36",
+"age":1
+},{"nr":13,
+"name":"ESP_Easy",
+"build":20104,
+"platform":"ESP Easy Mega",
+"ip":"192.168.1.67",
+"age":1
+}],
+"Sensors":[
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"Running",
+"NrDecimals":0,
+"Value":1
+},
+{"ValueNumber":2,
+"Name":"RunValue",
+"NrDecimals":0,
+"Value":1
+},
+{"ValueNumber":3,
+"Name":"Override",
+"NrDecimals":0,
+"Value":0
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":60,
+"Type":"Generic - Schedule [TESTING]",
+"TaskName":"Enabled",
+"TaskDeviceNumber":243,
+"TaskEnabled":"true",
+"TaskNumber":1
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"Value",
+"NrDecimals":1,
+"Value":57.4
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":10,
+"Type":"Analog input - internal",
+"TaskName":"Moisture",
+"TaskDeviceNumber":2,
+"TaskEnabled":"true",
+"TaskNumber":2
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"MoistureLow",
+"NrDecimals":0,
+"Value":45
+},
+{"ValueNumber":2,
+"Name":"WateringPeriod",
+"NrDecimals":0,
+"Value":12
+},
+{"ValueNumber":3,
+"Name":"MaxWateringCount",
+"NrDecimals":0,
+"Value":4
+},
+{"ValueNumber":4,
+"Name":"MinWateringDelay",
+"NrDecimals":0,
+"Value":120
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":60,
+"Type":"Generic - Dummy Device",
+"TaskName":"Config",
+"TaskDeviceNumber":33,
+"TaskEnabled":"true",
+"TaskNumber":3
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"On",
+"NrDecimals":0,
+"Value":0
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":60,
+"Type":"Output - Domoticz MQTT Helper",
+"TaskName":"Motor",
+"TaskDeviceNumber":29,
+"TaskEnabled":"true",
+"TaskNumber":4
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"WateringCount",
+"NrDecimals":0,
+"Value":0
+},
+{"ValueNumber":2,
+"Name":"PreviousMoisture",
+"NrDecimals":1,
+"Value":0.0
+},
+{"ValueNumber":3,
+"Name":"",
+"NrDecimals":2,
+"Value":0.00
+},
+{"ValueNumber":4,
+"Name":"",
+"NrDecimals":2,
+"Value":0.00
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":60,
+"Type":"Generic - Dummy Device",
+"TaskName":"Current",
+"TaskDeviceNumber":33,
+"TaskEnabled":"true",
+"TaskNumber":5
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"MoistAlmHyst",
+"NrDecimals":0,
+"Value":5
+},
+{"ValueNumber":2,
+"Name":"AutoRstAlms",
+"NrDecimals":0,
+"Value":0
+},
+{"ValueNumber":3,
+"Name":"Lang",
+"NrDecimals":0,
+"Value":0
+},
+{"ValueNumber":4,
+"Name":"",
+"NrDecimals":2,
+"Value":0.00
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":60,
+"Type":"Generic - Dummy Device",
+"TaskName":"Config1",
+"TaskDeviceNumber":33,
+"TaskEnabled":"true",
+"TaskNumber":6
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"YMD",
+"NrDecimals":0,
+"Value":18248
+},
+{"ValueNumber":2,
+"Name":"HMS",
+"NrDecimals":0,
+"Value":29279
+},
+{"ValueNumber":3,
+"Name":"",
+"NrDecimals":2,
+"Value":0.00
+},
+{"ValueNumber":4,
+"Name":"",
+"NrDecimals":2,
+"Value":0.00
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":60,
+"Type":"Generic - Dummy Device",
+"TaskName":"DT",
+"TaskDeviceNumber":33,
+"TaskEnabled":"true",
+"TaskNumber":7
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"WateringAlarm",
+"NrDecimals":0,
+"Value":0
+},
+{"ValueNumber":2,
+"Name":"CalibrateAlarm",
+"NrDecimals":0,
+"Value":0
+},
+{"ValueNumber":3,
+"Name":"SensorAlarm",
+"NrDecimals":0,
+"Value":1
+},
+{"ValueNumber":4,
+"Name":"",
+"NrDecimals":2,
+"Value":0.00
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":60,
+"Type":"Generic - Dummy Device",
+"TaskName":"Alarm",
+"TaskDeviceNumber":33,
+"TaskEnabled":"true",
+"TaskNumber":8
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"T",
+"NrDecimals":1,
+"Value":24.8
+},
+{"ValueNumber":2,
+"Name":"H",
+"NrDecimals":1,
+"Value":43.8
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":300,
+"Type":"Environment - DHT11/12/22  SONOFF2301/7021",
+"TaskName":"DHT",
+"TaskDeviceNumber":5,
+"TaskEnabled":"true",
+"TaskNumber":12
+}
+],
+"TTL":10000
+}

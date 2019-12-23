@@ -1,0 +1,72 @@
+{
+    "version": "0.0.4",
+    "updateurl": "https://raw.githubusercontent.com/tiomny/Plantware/master/",
+    "filelist": [{
+            "path": "upload",
+            "files": [{
+                    "name": "updater.json",
+                    "timestamp": "2019-10-20T10:50:08.179Z"
+                },
+                {
+                    "name": "alarm.svg",
+                    "timestamp": "2019-10-19T19:06:10.021Z"
+                },
+                {
+                    "name": "simpleflower.svg",
+                    "timestamp": "2019-10-19T19:06:10.021Z"
+                },
+                {
+                    "name": "flower.svg",
+                    "timestamp": "0"
+                },
+                {
+                    "name": "variables.json",
+                    "timestamp": "2019-10-19T19:06:10.024Z"
+                },
+                {
+                    "name": "main.js.gz",
+                    "timestamp": "2019-10-20T10:56:12.264Z"
+                },
+                {
+                    "name": "index.htm",
+                    "timestamp": "2019-10-20T10:36:16.162Z"
+                },
+                {
+                    "name": "runtime.js.gz",
+                    "timestamp": "2019-10-20T10:35:41.231Z"
+                },
+                {
+                    "name": "polyfills.js.gz",
+                    "timestamp": "2019-10-20T10:56:12.266Z"
+                },
+                {
+                    "name": "styles.css",
+                    "timestamp": "2019-10-19T19:06:10.015Z"
+                },
+                {
+                    "name": "rules1.txt",
+                    "timestamp": "2019-10-19T20:59:00.864Z"
+                },
+                {
+                    "name": "rules2.txt",
+                    "timestamp": "2019-10-19T20:59:00.000Z"
+                },
+                {
+                    "name": "rules3.txt",
+                    "timestamp": "2019-10-19T20:59:00.000Z"
+                },
+                {
+                    "name": "config.dat",
+                    "timestamp": "2019-10-19T20:59:00.000Z"
+                }
+            ]
+        },
+        {
+            "path": "update",
+            "files": [{
+                "name": "firmware.bin",
+                "timestamp": "2019-10-19T21:15:00.000Z"
+            }]
+        }
+    ]
+}
