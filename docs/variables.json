@@ -3,12 +3,14 @@
         "descr": "Main parameters",
         "vars": [{
                 "name": "Moisture#Value",
+                "short": "Current",
                 "descr": "Current soil moisture level",
                 "help": "Full-colored area indicates level of soil moisture.",
                 "valtype": "monitor"
             },
             {
                 "descr": "Last watering time",
+                "short": "Watered",
                 "name": "DT#YMD",
                 "valtype": "date"
             },
@@ -28,11 +30,13 @@
         }],
         "vars": [{
                 "name": "Config#MoistureLow",
+                "short": "Min",
                 "descr": "Minimal moisture level",
                 "valtype": "input"
             },
             {
                 "name": "Config#WateringPeriod",
+                "short": "Duration",
                 "descr": "Duration of watering",
                 "valtype": "input"
             }
@@ -47,18 +51,21 @@
         }],
         "vars": [{
                 "name": "Alarm#WateringAlarm",
+                "short": "Watering",
                 "descr": "Watering failure",
                 "help": "Watering was failed (check tube or water level in tank)",
                 "valtype": "alarm"
             },
             {
                 "name": "Alarm#CalibrateAlarm",
+                "short": "Calibration",
                 "descr": "Sensor calibration failure",
                 "help": "Moisture sensor needs to be recalibrated",
                 "valtype": "alarm"
             },
             {
                 "name": "Alarm#SensorAlarm",
+                "short": "Sensor",
                 "descr": "Sensor failure",
                 "help": "Sensor is disconnected or faulty",
                 "valtype": "alarm"
@@ -74,7 +81,8 @@
         }],
         "vars": [{
                 "name": "Config1#MoistAlmHyst",
-                "descr": "Minimal difference between moisture before and after watering to raise the alarm",
+                "descr": "Minimal moisture increase",
+                "help": "Minimal moisture increase after watering",
                 "valtype": "input"
             },
             {
@@ -108,13 +116,14 @@
             },
             {
                 "name": "Current#PreviousMoisture",
-                "descr": "Moisture value before last watering",
+                "descr": "Previous moisture",
+                "help": "Moisture value before last watering",
                 "valtype": "monitor"
             },
             {
                 "name": "Config#MaxWateringCount",
                 "descr": "Max watering times per day",
-                "help": "Number of drops is associated with maximum allowed number of pump starts per day. Number of full-coloured drops indicates how many times pump has already been started.",
+                "help": "Maximum allowed number of pump starts per day",
                 "valtype": "input"
             },
             {
