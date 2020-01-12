@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer1" 
+	xmlns="http://www.w3.org/2000/svg" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24.1 24.1" style="enable-background:new 0 0 24.1 24.1;" xml:space="preserve">
+	<defs>
+		<filter id="filter0_ii" x="-0.50061" y="-0.5" width="23.0008" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="-0.5" dy="-0.5"/>
+			<feGaussianBlur stdDeviation="0.25"/>
+			<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+			<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0.5" dy="0.5"/>
+			<feGaussianBlur stdDeviation="0.25"/>
+			<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0.127604 0 0 0 0 0.267969 0 0 0 0 0.408333 0 0 0 0.4 0"/>
+			<feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow"/>
+		</filter>
+		<style type="text/css">.st0{opacity:0.5;fill:none;stroke:url(#SVGID_1_);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;enable-background:new;}</style>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="21.73" y1="2.9973" x2="-0.31" y2="30.5473" gradientTransform="matrix(1 0 0 -1 0 24.9842)">
+			<stop offset="0" style="stop-color:#48657E"/>
+			<stop offset="0.23" style="stop-color:#6B8299"/>
+			<stop offset="0.44" style="stop-color:#DAE2EB"/>
+			<stop offset="0.68" style="stop-color:#8CA2B7"/>
+			<stop offset="1" style="stop-color:#EDF2F7"/>
+		</linearGradient>
+	</defs>
+	<title>Home</title>
+	<g id="layr" data-name="layr" filter="url(#filter0_ii)">
+		<path class="st0" d="M9.2,22.5l-1.9-6.7h10.5l-1.9,6.7H9.2z M3.4,1.5c4.8,0,7.6,3.8,8.6,13.4C12,14.9,1.5,11.1,3.4,1.5z M12.8,14.9c0.9-9.5,3.1-10.5,7.9-10.5C22.5,14,12.8,14.9,12.8,14.9z"/>
+	</g>
+</svg>
